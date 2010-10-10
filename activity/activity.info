@@ -1,0 +1,8 @@
+[Activity]
+name = Read SD Comics
+service_name = org.laptop.ReadSDComics
+exec = sugar-activity readsdcomics.ReadSDComics
+activity_version = 1
+icon = ViewSlides
+show_launcher = yes
+license = GPLv2+
