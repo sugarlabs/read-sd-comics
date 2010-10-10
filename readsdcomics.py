@@ -633,6 +633,7 @@ class ReadSDComics(activity.Activity):
     def write_file(self, file_path):
         "Save meta data for the file."
         
+        self.metadata['title'] = self.link
         self.save_page_number()
         self.metadata['activity'] = self.get_bundle_id()
         self.metadata['mime_type'] = 'application/x-cbz'
