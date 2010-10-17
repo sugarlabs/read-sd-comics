@@ -89,6 +89,10 @@ class ReadSDComics(activity.Activity):
         
         self._filechooser = gtk.FileChooserWidget(
             action=gtk.FILE_CHOOSER_ACTION_OPEN, backend=None)
+        filter = gtk.FileFilter()
+        filter.add_mime_type('application/zip')
+        filter.add_mime_type('application/x-cbz')
+        self._filechooser.set_filter(filter)
         self._filechooser.set_current_folder("/media")
         self.copy_button = gtk.Button(_("Read Comic"))
         self.copy_button.connect('clicked',  self.select_comic_path)
@@ -129,13 +133,14 @@ class ReadSDComics(activity.Activity):
         self._filechooser.hide()
         self.scrolled.show()
         self.link = filename
+        self.metadata['title'] = self.make_new_filename(self.link)
         self._load_document(filename)   
 
     def create_old_toolbar(self):
         toolbox = activity.ActivityToolbox(self)
         activity_toolbar = toolbox.get_activity_toolbar()
-        activity_toolbar.remove(activity_toolbar.keep)
-        activity_toolbar.keep = None
+        activity_toolbar.keep.props.visible = False
+        activity_toolbar.share.props.visible = False
         
         self.read_toolbar = ReadToolbar()
         toolbox.add_toolbar(_('Read'), self.read_toolbar)
@@ -159,10 +164,10 @@ class ReadSDComics(activity.Activity):
         filename = file_chooser.get_preview_filename()
         try:
             file_mimetype = mime.get_for_file(filename)
-            if file_mimetype  == 'application/x-cbz':
+            if file_mimetype  == 'application/x-cbz' or file_mimetype == 'application/zip':
                 fname = self.extract_image(filename)
                 pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(fname, 
-                                                          style.zoom(320), style.zoom(240))
+                    style.zoom(320), style.zoom(240))
                 preview.set_from_pixbuf(pixbuf)
                 have_preview = True
                 os.remove(fname)
@@ -594,6 +599,7 @@ class ReadSDComics(activity.Activity):
         
     def save_page_number(self):
         title = self.metadata.get('title', '')
+        self.metadata['title_set_by_user'] = '1'
         if not title[len(title)- 1].isdigit():
             title = title + ' P' +  str(self.page + 1)
         else:
@@ -608,6 +614,10 @@ class ReadSDComics(activity.Activity):
 
     def _load_document(self, file_path):
         "Read the Zip file containing the images"
+        if not os.path.exists(file_path):
+            self._alert('Error', 'File ' + file_path + ' does not exist.')
+            return
+        
         if zipfile.is_zipfile(file_path):
             self.zf = zipfile.ZipFile(file_path, 'r')
             self.image_files = self.zf.namelist()
@@ -628,16 +638,17 @@ class ReadSDComics(activity.Activity):
                 self.read_toolbar.set_total_pages(len(self.image_files))
                 self.read_toolbar.set_current_page(self.page)
         else:
-            print 'Not a zipfile',  file_path
+            self._alert('Error', 'Not a zipfile ' + file_path)
 
     def write_file(self, file_path):
         "Save meta data for the file."
         
-        self.metadata['title'] = self.link
         self.save_page_number()
         self.metadata['activity'] = self.get_bundle_id()
         self.metadata['mime_type'] = 'application/x-cbz'
         out = open(file_path, 'w')
+        if self.link is None:
+            self.link = 'No File'
         out.write(self.link)
         out.close()
 

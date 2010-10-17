@@ -44,6 +44,7 @@ class MyActivityToolbarButton(ToolbarButton):
         toolbar = ActivityToolbar(activity, orientation_left=True)
         toolbar.stop.hide()
         toolbar.keep.hide()
+        toolbar.share.hide()
 
         ToolbarButton.__init__(self, page=toolbar, **kwargs)
 

@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" ?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'
+  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY stroke_color "#000000">
+	<!ENTITY fill_color "#FFFFFF">
+]>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -17,7 +22,7 @@
    y="0px"
    id="svg2442"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.47 r22583"
    sodipodi:docname="ReadSDComics.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"><metadata
    id="metadata2457"><rdf:RDF><cc:Work
@@ -30,8 +35,8 @@
      inkscape:vp_z="55 : 27.5 : 1"
      inkscape:persp3d-origin="27.5 : 18.333333 : 1"
      id="perspective2459" /></defs><sodipodi:namedview
-   inkscape:window-height="829"
-   inkscape:window-width="1440"
+   inkscape:window-height="693"
+   inkscape:window-width="1360"
    inkscape:pageshadow="2"
    inkscape:pageopacity="0.0"
    guidetolerance="10.0"
@@ -47,34 +52,12 @@
    inkscape:cy="27.5"
    inkscape:window-x="0"
    inkscape:window-y="25"
-   inkscape:current-layer="svg2442" />
-<path
-   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-   d="M 11.358696,21.043478 L 11.358696,21.043478 z"
-   id="path2483" /><text
-   xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans"
-   x="12.315217"
-   y="33.47826"
-   id="text2485"><tspan
-     sodipodi:role="line"
-     id="tspan2487" /></text>
-
-<text
-   xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans"
-   x="12.195652"
-   y="35.630436"
-   id="text2489"><tspan
-     sodipodi:role="line"
-     id="tspan2491"
-     x="12.195652"
-     y="35.630436" /></text>
-
+   inkscape:current-layer="svg2442"
+   inkscape:window-maximized="1" />
 
 <path
    sodipodi:type="star"
-   style="fill:#ffff00;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   style="fill:&fill_color;;fill-rule:evenodd;stroke:&stroke_color;;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
    id="path2406"
    sodipodi:sides="5"
    sodipodi:cx="10.163043"
@@ -89,7 +72,7 @@
    d="M 26.782609,26.423913 L 12.879914,23.191472 L 2.335457,32.811661 L 1.1135226,18.590533 L -11.294237,11.53496 L 1.8532608,5.978261 L 4.7293007,-8.0025115 L 14.076836,2.7843876 L 28.262086,1.1993678 L 20.891682,13.422737 L 26.782609,26.423913 z"
    transform="matrix(1.3753897,-5.7673904e-2,0,0.8743402,17.44022,15.178825)" /><text
    xml:space="preserve"
-   style="font-size:9px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+   style="font-size:9px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:&fill_color;;fill-opacity:1;stroke:&stroke_color;;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
    x="17.934784"
    y="28.934782"
    id="text2493"
@@ -98,4 +81,5 @@
      id="tspan2495"
      x="17.934784"
      y="28.934782">POW!</tspan></text>
+
 </svg>
