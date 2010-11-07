@@ -645,7 +645,6 @@ class ReadSDComics(activity.Activity):
         
         self.save_page_number()
         self.metadata['activity'] = self.get_bundle_id()
-        self.metadata['mime_type'] = 'application/x-cbz'
         out = open(file_path, 'w')
         if self.link is None:
             self.link = 'No File'
