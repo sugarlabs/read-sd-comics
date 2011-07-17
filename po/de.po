@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-16 19:33-0500\n"
-"PO-Revision-Date: 2011-02-17 10:44+0200\n"
-"Last-Translator: Florian <seibert.florian@gmail.com>\n"
+"PO-Revision-Date: 2011-07-18 00:03+0200\n"
+"Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
-msgstr ""
+msgstr "SD-Bildergeschichten lesen"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
@@ -29,7 +29,7 @@ msgstr "Zurück"
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
 msgid "Previous page"
-msgstr "Letzte Seite"
+msgstr "Vorherige Seite"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
@@ -58,7 +58,7 @@ msgstr "Vollbild"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
 msgid "Read Comic"
-msgstr "Lese Bildergeschichte"
+msgstr "Bildergeschichte lesen"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
 msgid "Read"
