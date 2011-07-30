@@ -7,19 +7,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-16 19:33-0500\n"
-"PO-Revision-Date: 2011-03-24 07:44+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2011-07-29 19:58+0200\n"
+"Last-Translator:  <anush.mkrtchyan@ca1492.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.0.1\n"
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
-msgstr ""
+msgstr "SD Ծաղրաշարերի ընթերցում"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
@@ -58,7 +58,7 @@ msgstr "Էկրանի չափով"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
 msgid "Read Comic"
-msgstr ""
+msgstr "Ընթերցել ծաղրաշարը"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
 msgid "Read"
