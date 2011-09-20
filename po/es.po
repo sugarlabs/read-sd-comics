@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-16 19:33-0500\n"
-"PO-Revision-Date: 2011-03-08 07:42+0200\n"
-"Last-Translator: Rafael Ortiz <rafael@laptop.org>\n"
+"POT-Creation-Date: 2011-08-06 15:52-0500\n"
+"PO-Revision-Date: 2011-06-04 08:03+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
-msgstr "Leer  comics desde SD"
+msgstr "Leer comics desde SD"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
