@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-16 19:33-0500\n"
+"POT-Creation-Date: 2011-08-06 15:52-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,51 +18,51 @@ msgstr ""
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
-msgstr ""
+msgstr "SD විහිළු කියවන්න"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
 msgid "Back"
-msgstr ""
+msgstr "ආපසු"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
 msgid "Previous page"
-msgstr ""
+msgstr "පෙර පිටුව"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
 msgid "Forward"
-msgstr ""
+msgstr "ඉදිරියට"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
 msgid "Next page"
-msgstr ""
+msgstr "ඊළඟ පිටුව"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
 msgid "Zoom out"
-msgstr ""
+msgstr "කුඩා කරන්න"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
 msgid "Zoom in"
-msgstr ""
+msgstr "විශාල කරන්න"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
 msgid "Fullscreen"
-msgstr ""
+msgstr "මුළු තිරයම"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
 msgid "Read Comic"
-msgstr ""
+msgstr "විහිළු කියවන්න"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
 msgid "Read"
-msgstr ""
+msgstr "කියවන්න"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
 msgid "View"
-msgstr ""
+msgstr "දසුන"
