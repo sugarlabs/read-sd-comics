@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-06 15:52-0500\n"
+"PO-Revision-Date: 2011-11-26 05:14+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: aym\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#  "Leer comics desde SD"
+#: activity/activity.info:2
+msgid "Read SD Comics"
+msgstr ""
+
+#  "Atras"
+#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
+msgid "Back"
+msgstr "Alaxa pacha pata"
+
+#  "Pagina anterior"
+#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
+msgid "Previous page"
+msgstr "Qutir laphi"
+
+#  "Adelante"
+#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
+msgid "Forward"
+msgstr "Sartawi"
+
+#  "Pagina Siguiente"
+#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
+msgid "Next page"
+msgstr "Jutiri laphi"
+
+#  "Reducir"
+#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
+msgid "Zoom out"
+msgstr "Jisk'aptayaña"
+
+#  "Magnificar"
+#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
+msgid "Zoom in"
+msgstr "Jach'aptayaña"
+
+#  "Pantalla Completa"
+#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
+msgid "Fullscreen"
+msgstr "Maypacha uñtawi"
+
+#  "leer Comic"
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
+msgid "Read Comic"
+msgstr ""
+
+#  "Leer"
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
+msgid "Read"
+msgstr "Ullaña"
+
+#  "Ver"
+#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
+msgid "View"
+msgstr "Unjaña"
