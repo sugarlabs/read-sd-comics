@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-06 15:52-0500\n"
-"PO-Revision-Date: 2011-07-29 19:58+0200\n"
-"Last-Translator: <anush.mkrtchyan@ca1492.com>\n"
+"PO-Revision-Date: 2011-12-23 05:23+0200\n"
+"Last-Translator: Jasmine <udea_jasmine@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
@@ -29,7 +29,7 @@ msgstr "Հետ"
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
 msgid "Previous page"
-msgstr "նախորդ էջը"
+msgstr "Նախորդ էջը"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
@@ -44,12 +44,12 @@ msgstr "Հաջորդ էջը"
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
 msgid "Zoom out"
-msgstr "Հեռվացնել"
+msgstr "Փոքրացնել"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
 msgid "Zoom in"
-msgstr "Մոտեցնել"
+msgstr "Խոշորացնել"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
