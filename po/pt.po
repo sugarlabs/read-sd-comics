@@ -2,67 +2,68 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-06 15:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-04-13 00:07+0200\n"
+"Last-Translator: Eduardo H. <hoboprimate@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
-msgstr ""
+msgstr "Ler BD's em SD"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
 msgid "Back"
-msgstr ""
+msgstr "Voltar"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
 msgid "Previous page"
-msgstr ""
+msgstr "Página anterior"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
 msgid "Forward"
-msgstr ""
+msgstr "Avançar"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
 msgid "Next page"
-msgstr ""
+msgstr "Página seguinte"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
 msgid "Zoom out"
-msgstr ""
+msgstr "Afastar Zoom"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
 msgid "Zoom in"
-msgstr ""
+msgstr "Aproximar Zoom"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
 msgid "Fullscreen"
-msgstr ""
+msgstr "Ecrã Inteiro"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
 msgid "Read Comic"
-msgstr ""
+msgstr "Ler BD"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
 msgid "Read"
-msgstr ""
+msgstr "Ler"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
 msgid "View"
-msgstr ""
+msgstr "Ver"
