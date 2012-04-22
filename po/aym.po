@@ -1,3 +1,7 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,7 +17,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#  "Leer comics desde SD"
 #: activity/activity.info:2
 msgid "Read SD Comics"
 msgstr ""
@@ -60,7 +63,6 @@ msgstr "Jach'aptayaña"
 msgid "Fullscreen"
 msgstr "Maypacha uñtawi"
 
-#  "leer Comic"
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
 msgid "Read Comic"
 msgstr ""
