@@ -2,19 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-06 15:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-05-22 00:05+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
@@ -27,8 +28,9 @@ msgstr ""
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
+#, fuzzy
 msgid "Previous page"
-msgstr ""
+msgstr "Halaman sebelumnya"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
@@ -37,32 +39,36 @@ msgstr ""
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
+#, fuzzy
 msgid "Next page"
-msgstr ""
+msgstr "Halaman selanjutnya"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
 msgid "Zoom out"
-msgstr ""
+msgstr "Perkecil"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
+#, fuzzy
 msgid "Zoom in"
-msgstr ""
+msgstr "Perbesar"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
 msgid "Fullscreen"
-msgstr ""
+msgstr "Layar Penuh"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
 msgid "Read Comic"
 msgstr ""
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
+#, fuzzy
 msgid "Read"
-msgstr ""
+msgstr "Baca"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
+#, fuzzy
 msgid "View"
-msgstr ""
+msgstr "Tampilan"
