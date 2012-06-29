@@ -7,19 +7,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-06 15:52-0500\n"
-"PO-Revision-Date: 2011-03-18 06:05+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2012-06-29 08:16+0200\n"
+"Last-Translator: jui <appukonrad@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2
 msgid "Read SD Comics"
-msgstr ""
+msgstr "Přečtěte si SD Komiks"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
@@ -29,7 +29,7 @@ msgstr "Zpět"
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
 msgid "Previous page"
-msgstr ""
+msgstr "Předcházející strana"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
@@ -39,7 +39,7 @@ msgstr "Vpřed"
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
 msgid "Next page"
-msgstr ""
+msgstr "Následující strana"
 
 #: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
@@ -58,11 +58,11 @@ msgstr "Celá obrazovka"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
 msgid "Read Comic"
-msgstr ""
+msgstr "Číst komiks"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
 msgid "Read"
-msgstr ""
+msgstr "Číst"
 
 #: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
 msgid "View"
