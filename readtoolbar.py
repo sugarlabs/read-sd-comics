@@ -1,4 +1,4 @@
-# Copyright (C) 2010, James Simmons.
+# Copyright (C) 2010, James Simmons <nicestep@gmail.com>
 # Adapted from code Copyright (C) Red Hat Inc.
 #
 # This program is free software; you can redistribute it and/or modify

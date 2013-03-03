@@ -1,8 +1,9 @@
 [Activity]
 name = Read SD Comics
-service_name = org.laptop.ReadSDComics
+bundle_id = org.laptop.ReadSDComics
 exec = sugar-activity readsdcomics.ReadSDComics
-activity_version = 2
+activity_version = 3
 icon = ReadSDComics
 show_launcher = yes
 license = GPLv2+
+summary = Read comic book CBZ files from your SD or thumb drive, and avoid filling up your Journal.
