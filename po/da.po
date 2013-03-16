@@ -6,64 +6,66 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-06 15:52-0500\n"
-"PO-Revision-Date: 2011-04-06 18:48+0200\n"
-"Last-Translator: Aputsiaq <aj@isit.gl>\n"
+"POT-Creation-Date: 2013-03-04 00:31-0500\n"
+"PO-Revision-Date: 2013-03-16 23:06+0200\n"
+"Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Read SD Comics"
 msgstr "Læs SD-tegneserier"
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
-msgid "Back"
-msgstr "Tilbage"
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid ""
+"Read comic book CBZ files from your SD or thumb drive, and avoid filling up "
+"your Journal."
+msgstr ""
+"Læs tegneserier fra filer med CBZ-formatet fra dit SD-kort eller USB-drev, "
+"og ungdå at din journal bliver overfyldt."
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
-msgid "Previous page"
-msgstr "Forrige side"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
-msgid "Forward"
-msgstr "Fremad"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
-msgid "Next page"
-msgstr "Næste side"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
-msgid "Zoom out"
-msgstr "Zoom ud"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
-msgid "Zoom in"
-msgstr "Zoom ind"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
-msgid "Fullscreen"
-msgstr "Fuldskærm"
-
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
+#: readsdcomics.py:97
 msgid "Read Comic"
 msgstr "Læs tegneserie"
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
+#: readsdcomics.py:146
 msgid "Read"
 msgstr "Læs"
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
+#: readsdcomics.py:151
 msgid "View"
 msgstr "Vis"
+
+#: readsdcomics.py:209 readtoolbar.py:37
+msgid "Back"
+msgstr "Tilbage"
+
+#: readsdcomics.py:212 readtoolbar.py:40
+msgid "Previous page"
+msgstr "Forrige side"
+
+#: readsdcomics.py:221 readtoolbar.py:49
+msgid "Forward"
+msgstr "Fremad"
+
+#: readsdcomics.py:224 readtoolbar.py:52
+msgid "Next page"
+msgstr "Næste side"
+
+#: readsdcomics.py:266 readtoolbar.py:158
+msgid "Zoom out"
+msgstr "Zoom ud"
+
+#: readsdcomics.py:273 readtoolbar.py:165
+msgid "Zoom in"
+msgstr "Zoom ind"
+
+#: readsdcomics.py:280 readtoolbar.py:177
+msgid "Fullscreen"
+msgstr "Fuldskærm"
