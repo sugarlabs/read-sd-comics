@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-06 15:52-0500\n"
+"POT-Creation-Date: 2013-03-04 00:31-0500\n"
 "PO-Revision-Date: 2011-02-20 11:00+0200\n"
 "Last-Translator: John Sarlis <sarlis@sch.gr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,53 +18,53 @@ msgstr ""
 "X-Generator: Pootle 2.0.1\n"
 
 # http://wiki.sugarlabs.org/go/Activities/Read_SD_Comics
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Read SD Comics"
 msgstr "Διάβασε SD Κόμικς"
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
-msgid "Back"
-msgstr "Πίσω"
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid ""
+"Read comic book CBZ files from your SD or thumb drive, and avoid filling up "
+"your Journal."
+msgstr ""
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
-msgid "Previous page"
-msgstr "Σελίδα πριν"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
-msgid "Forward"
-msgstr "Μπροστά"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
-msgid "Next page"
-msgstr "Σελίδα μετά"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
-msgid "Zoom out"
-msgstr "Εστίαση έξω"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
-msgid "Zoom in"
-msgstr "Εστίαση μέσα"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
-msgid "Fullscreen"
-msgstr "Πλήρης οθόνη"
-
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
+#: readsdcomics.py:97
 msgid "Read Comic"
 msgstr "Διάβασμα του Κόμικ"
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
+#: readsdcomics.py:146
 msgid "Read"
 msgstr "Διάβασμα"
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
+#: readsdcomics.py:151
 msgid "View"
 msgstr "Προβολή"
+
+#: readsdcomics.py:209 readtoolbar.py:37
+msgid "Back"
+msgstr "Πίσω"
+
+#: readsdcomics.py:212 readtoolbar.py:40
+msgid "Previous page"
+msgstr "Σελίδα πριν"
+
+#: readsdcomics.py:221 readtoolbar.py:49
+msgid "Forward"
+msgstr "Μπροστά"
+
+#: readsdcomics.py:224 readtoolbar.py:52
+msgid "Next page"
+msgstr "Σελίδα μετά"
+
+#: readsdcomics.py:266 readtoolbar.py:158
+msgid "Zoom out"
+msgstr "Εστίαση έξω"
+
+#: readsdcomics.py:273 readtoolbar.py:165
+msgid "Zoom in"
+msgstr "Εστίαση μέσα"
+
+#: readsdcomics.py:280 readtoolbar.py:177
+msgid "Fullscreen"
+msgstr "Πλήρης οθόνη"

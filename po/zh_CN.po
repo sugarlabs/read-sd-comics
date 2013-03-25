@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-06 15:52-0500\n"
-"PO-Revision-Date: 2011-12-21 17:25+0200\n"
+"POT-Creation-Date: 2013-03-04 00:31-0500\n"
+"PO-Revision-Date: 2013-03-09 09:23+0200\n"
 "Last-Translator: lite <litekok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -17,53 +17,53 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Read SD Comics"
 msgstr "阅读动漫"
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
-msgid "Back"
-msgstr "后退"
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid ""
+"Read comic book CBZ files from your SD or thumb drive, and avoid filling up "
+"your Journal."
+msgstr "从您的SD卡或闪盘阅读漫画书CBZ文件，避免填满你的日记。"
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
-msgid "Previous page"
-msgstr "上一页"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
-msgid "Forward"
-msgstr "向前"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
-msgid "Next page"
-msgstr "下一页"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
-msgid "Zoom out"
-msgstr "缩小"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
-msgid "Zoom in"
-msgstr "放大"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
-msgid "Fullscreen"
-msgstr "全屏显示"
-
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
+#: readsdcomics.py:97
 msgid "Read Comic"
 msgstr "阅读动漫"
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
+#: readsdcomics.py:146
 msgid "Read"
 msgstr "阅读"
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
+#: readsdcomics.py:151
 msgid "View"
 msgstr "查看"
+
+#: readsdcomics.py:209 readtoolbar.py:37
+msgid "Back"
+msgstr "后退"
+
+#: readsdcomics.py:212 readtoolbar.py:40
+msgid "Previous page"
+msgstr "上一页"
+
+#: readsdcomics.py:221 readtoolbar.py:49
+msgid "Forward"
+msgstr "向前"
+
+#: readsdcomics.py:224 readtoolbar.py:52
+msgid "Next page"
+msgstr "下一页"
+
+#: readsdcomics.py:266 readtoolbar.py:158
+msgid "Zoom out"
+msgstr "缩小"
+
+#: readsdcomics.py:273 readtoolbar.py:165
+msgid "Zoom in"
+msgstr "放大"
+
+#: readsdcomics.py:280 readtoolbar.py:177
+msgid "Fullscreen"
+msgstr "全屏显示"

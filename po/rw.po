@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-06 15:52-0500\n"
+"POT-Creation-Date: 2013-03-04 00:31-0500\n"
 "PO-Revision-Date: 2011-06-15 16:29+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,53 +17,53 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1) ;\n"
 "X-Generator: Pootle 2.0.1\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Read SD Comics"
 msgstr ""
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:37
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:209
-msgid "Back"
-msgstr "Garuka"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:40
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:212
-msgid "Previous page"
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid ""
+"Read comic book CBZ files from your SD or thumb drive, and avoid filling up "
+"your Journal."
 msgstr ""
 
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:49
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:221
-msgid "Forward"
-msgstr "Oherereza"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:52
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:224
-msgid "Next page"
-msgstr ""
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:158
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:266
-msgid "Zoom out"
-msgstr "Kugabanya ubunini"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:165
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:273
-msgid "Zoom in"
-msgstr "Kongera ubunini"
-
-#: /home/jim/olpc/readsdcomics/mainline/readtoolbar.py:177
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:280
-msgid "Fullscreen"
-msgstr "Ekara nini"
-
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:97
+#: readsdcomics.py:97
 msgid "Read Comic"
 msgstr ""
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:146
+#: readsdcomics.py:146
 msgid "Read"
 msgstr ""
 
-#: /home/jim/olpc/readsdcomics/mainline/readsdcomics.py:151
+#: readsdcomics.py:151
 msgid "View"
 msgstr "Kureba"
+
+#: readsdcomics.py:209 readtoolbar.py:37
+msgid "Back"
+msgstr "Garuka"
+
+#: readsdcomics.py:212 readtoolbar.py:40
+msgid "Previous page"
+msgstr ""
+
+#: readsdcomics.py:221 readtoolbar.py:49
+msgid "Forward"
+msgstr "Oherereza"
+
+#: readsdcomics.py:224 readtoolbar.py:52
+msgid "Next page"
+msgstr ""
+
+#: readsdcomics.py:266 readtoolbar.py:158
+msgid "Zoom out"
+msgstr "Kugabanya ubunini"
+
+#: readsdcomics.py:273 readtoolbar.py:165
+msgid "Zoom in"
+msgstr "Kongera ubunini"
+
+#: readsdcomics.py:280 readtoolbar.py:177
+msgid "Fullscreen"
+msgstr "Ekara nini"
