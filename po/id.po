@@ -7,19 +7,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-04 00:31-0500\n"
-"PO-Revision-Date: 2012-05-22 00:05+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2016-04-16 11:00+0000\n"
+"Last-Translator: andika <andika@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1460804427.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Read SD Comics"
-msgstr ""
+msgstr "Baca Komik SD"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
@@ -27,36 +28,34 @@ msgid ""
 "Read comic book CBZ files from your SD or thumb drive, and avoid filling up "
 "your Journal."
 msgstr ""
+"Baca berkas CBZ buku komik dari SD atau thumb drive Anda, dan hindari "
+"memenuhi Jurnal Anda."
 
 #: readsdcomics.py:97
 msgid "Read Comic"
-msgstr ""
+msgstr "Baca Komik"
 
 #: readsdcomics.py:146
-#, fuzzy
 msgid "Read"
 msgstr "Baca"
 
 #: readsdcomics.py:151
-#, fuzzy
 msgid "View"
-msgstr "Tampilan"
+msgstr "Tilik"
 
 #: readsdcomics.py:209 readtoolbar.py:37
 msgid "Back"
-msgstr ""
+msgstr "Mundur"
 
 #: readsdcomics.py:212 readtoolbar.py:40
-#, fuzzy
 msgid "Previous page"
 msgstr "Halaman sebelumnya"
 
 #: readsdcomics.py:221 readtoolbar.py:49
 msgid "Forward"
-msgstr ""
+msgstr "Maju"
 
 #: readsdcomics.py:224 readtoolbar.py:52
-#, fuzzy
 msgid "Next page"
 msgstr "Halaman selanjutnya"
 
@@ -65,7 +64,6 @@ msgid "Zoom out"
 msgstr "Perkecil"
 
 #: readsdcomics.py:273 readtoolbar.py:165
-#, fuzzy
 msgid "Zoom in"
 msgstr "Perbesar"
 
