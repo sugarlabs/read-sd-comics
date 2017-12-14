@@ -7,3 +7,4 @@ icon = ReadSDComics
 show_launcher = yes
 license = GPLv2+
 summary = Read comic book CBZ files from your SD or thumb drive, and avoid filling up your Journal.
+repository = https://github.com/sugarlabs/read-sd-comics.git
