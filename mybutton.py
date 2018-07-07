@@ -16,23 +16,26 @@
 # You should have received a copy of the GNU General Public License along
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  US
-import gtk
-import gconf
+import gi
+gi.require_version('GConf', '2.0')
+from gi.repository import Gtk
+from gi.repository import GConf
 
-from sugar.graphics.toolbarbox import ToolbarButton
-from sugar.activity.widgets import ActivityToolbar
-from sugar.graphics.xocolor import XoColor
-from sugar.graphics.icon import Icon
-from sugar.bundle.activitybundle import ActivityBundle
+from sugar3.activity.widgets import StopButton
+from sugar3.graphics.toolbarbox import ToolbarButton
+from sugar3.activity.widgets import ActivityToolbar
+from sugar3.graphics.xocolor import XoColor
+from sugar3.graphics.icon import Icon
+from sugar3.bundle.activitybundle import ActivityBundle
 
 def _create_activity_icon(metadata):
     if metadata.get('icon-color', ''):
         color = XoColor(metadata['icon-color'])
     else:
-        client = gconf.client_get_default()
+        client = GConf.Client.get_default()
         color = XoColor(client.get_string('/desktop/sugar/user/color'))
 
-    from sugar.activity.activity import get_bundle_path
+    from sugar3.activity.activity import get_bundle_path
     bundle = ActivityBundle(get_bundle_path())
     icon = Icon(file=bundle.get_icon(), xo_color=color)
 
@@ -42,9 +45,9 @@ class MyActivityToolbarButton(ToolbarButton):
 
     def __init__(self, activity, **kwargs):
         toolbar = ActivityToolbar(activity, orientation_left=True)
-        toolbar.stop.hide()
-        toolbar.keep.hide()
-        toolbar.share.hide()
+        # toolbar.stop.hide()
+        # toolbar.keep.hide()
+        # toolbar.share.hide()
 
         ToolbarButton.__init__(self, page=toolbar, **kwargs)
 

@@ -19,20 +19,20 @@ import logging
 from gettext import gettext as _
 import re
 
-import pango
-import gobject
-import gtk
+from gi.repository import Pango
+from gi.repository import GObject
+from gi.repository import Gtk
 
-from sugar.graphics.toolbutton import ToolButton
-from sugar.graphics.menuitem import MenuItem
-from sugar.graphics.toggletoolbutton import ToggleToolButton
-from sugar.activity import activity
+from sugar3.graphics.toolbutton import ToolButton
+from sugar3.graphics.menuitem import MenuItem
+from sugar3.graphics.toggletoolbutton import ToggleToolButton
+from sugar3.activity import activity
 
-class ReadToolbar(gtk.Toolbar):
+class ReadToolbar(Gtk.Toolbar):
     __gtype_name__ = 'ReadToolbar'
 
     def __init__(self):
-        gtk.Toolbar.__init__(self)
+        GObject.GObject.__init__(self)
         self.back = ToolButton('go-previous')
         self.back.set_tooltip(_('Back'))
         self.back.props.sensitive = False
@@ -57,9 +57,9 @@ class ReadToolbar(gtk.Toolbar):
         self.insert(self.forward, -1)
         self.forward.show()
 
-        num_page_item = gtk.ToolItem()
+        num_page_item = Gtk.ToolItem()
 
-        self._num_page_entry = gtk.Entry()
+        self._num_page_entry = Gtk.Entry()
         self._num_page_entry.set_text('0')
         self._num_page_entry.set_alignment(1)
         self._num_page_entry.connect('insert-text',
@@ -75,13 +75,13 @@ class ReadToolbar(gtk.Toolbar):
         self.insert(num_page_item, -1)
         num_page_item.show()
 
-        total_page_item = gtk.ToolItem()
+        total_page_item = Gtk.ToolItem()
 
-        self._total_page_label = gtk.Label()
+        self._total_page_label = Gtk.Label()
 
-        label_attributes = pango.AttrList()
-        label_attributes.insert(pango.AttrSize(14000, 0, -1))
-        label_attributes.insert(pango.AttrForeground(65535, 65535, 65535, 0, -1))
+        label_attributes = Pango.AttrList()
+        label_attributes.insert(Pango.AttrSize(14000, 0, -1))
+        label_attributes.insert(Pango.AttrForeground(65535, 65535, 65535, 0, -1))
         self._total_page_label.set_attributes(label_attributes)
 
         self._total_page_label.set_text(' / 0')
@@ -145,15 +145,15 @@ class ReadToolbar(gtk.Toolbar):
         button.set_active(b)
         button.handler_unblock(id)
 
-class ViewToolbar(gtk.Toolbar):
+class ViewToolbar(Gtk.Toolbar):
     __gsignals__ = {
-        'go-fullscreen': (gobject.SIGNAL_RUN_FIRST,
-                          gobject.TYPE_NONE,
+        'go-fullscreen': (GObject.SignalFlags.RUN_FIRST,
+                          None,
                           ([]))
     }
 
     def __init__(self):
-        gtk.Toolbar.__init__(self)
+        GObject.GObject.__init__(self)
         self._zoom_out = ToolButton('zoom-out')
         self._zoom_out.set_tooltip(_('Zoom out'))
         self._zoom_out.connect('clicked', self._zoom_out_cb)
@@ -168,7 +168,7 @@ class ViewToolbar(gtk.Toolbar):
         self._zoom_in.props.sensitive = True
         self._zoom_in.show()
 
-        spacer = gtk.SeparatorToolItem()
+        spacer = Gtk.SeparatorToolItem()
         spacer.props.draw = False
         self.insert(spacer, -1)
         spacer.show()
