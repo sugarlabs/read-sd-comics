@@ -68,7 +68,7 @@ class ReadSDComics(activity.Activity):
         self.zoom_image_to_fit = True
         self.total_pages = 0
 
-        self.connect("draw", self.area_expose_cb)
+        self.connect("draw", self.__draw_cb)
         self.connect("delete_event", self.delete_cb)
        
         if _NEW_TOOLBAR_SUPPORT:
@@ -478,7 +478,7 @@ class ReadSDComics(activity.Activity):
             self.read_toolbar.set_current_page(page)
         self.page = page
 
-    def area_expose_cb(self, area, event):
+    def __draw_cb(self, widget, cr):
         screen_width = Gdk.Screen.width()
         screen_height = Gdk.Screen.height()
         if self.saved_screen_width != screen_width and self.saved_screen_width != 0:
