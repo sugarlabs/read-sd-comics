@@ -123,9 +123,7 @@ class ReadSDComics(activity.Activity):
         self.saved_screen_width = 0
         self.eventbox.grab_focus()
         
-        # pixmap = Gdk.Pixmap(None, 1, 1, 1)
-        # color = Gdk.Color()
-        # self.hidden_cursor = Gdk.Cursor.new(pixmap, pixmap, color, color, 0, 0)
+        self.hidden_cursor = Gdk.Cursor.new(Gdk.CursorType.BLANK_CURSOR)
         self.cursor_visible = True
 
         self.link = None
@@ -248,12 +246,6 @@ class ReadSDComics(activity.Activity):
 
         total_page_item = Gtk.ToolItem()
         self.total_page_label = Gtk.Label()
-
-        label_attributes = Pango.AttrList()
-        # label_attributes.insert(Pango.AttrSize(14000, 0, -1))
-        # label_attributes.insert(Pango.AttrForeground(65535, 65535, 
-                                                     # 65535, 0, -1))
-        self.total_page_label.set_attributes(label_attributes)
 
         self.total_page_label.set_text(' / 0')
         total_page_item.add(self.total_page_label)
