@@ -79,11 +79,6 @@ class ReadToolbar(Gtk.Toolbar):
 
         self._total_page_label = Gtk.Label()
 
-        label_attributes = Pango.AttrList()
-        label_attributes.insert(Pango.AttrSize(14000, 0, -1))
-        label_attributes.insert(Pango.AttrForeground(65535, 65535, 65535, 0, -1))
-        self._total_page_label.set_attributes(label_attributes)
-
         self._total_page_label.set_text(' / 0')
         total_page_item.add(self._total_page_label)
         self._total_page_label.show()
