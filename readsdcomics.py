@@ -20,30 +20,33 @@ import logging
 import time
 import zipfile
 from zipfile import BadZipfile
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import Gdk
 import pygame
 import re
-import pango
-from sugar import mime
-from sugar.activity import activity
-from sugar.graphics.alert import NotifyAlert
-from sugar.graphics import style
+from gi.repository import Pango
+from sugar3 import mime
+from sugar3.activity import activity
+from sugar3.graphics.alert import NotifyAlert
+from sugar3.graphics import style
 
 _NEW_TOOLBAR_SUPPORT = True
 try:
-    from sugar.graphics.toolbarbox import ToolbarBox
-    from sugar.graphics.toolbarbox import ToolbarButton
-    from sugar.activity.widgets import StopButton
+    from sugar3.graphics.toolbarbox import ToolbarBox
+    from sugar3.graphics.toolbarbox import ToolbarButton
+    from sugar3.activity.widgets import StopButton
     from readtoolbar import ViewToolbar
-    from sugar.graphics.toolbutton import ToolButton
-    from sugar.graphics.menuitem import MenuItem
+    from sugar3.graphics.toolbutton import ToolButton
+    from sugar3.graphics.menuitem import MenuItem
     from mybutton import MyActivityToolbarButton
 except:
     _NEW_TOOLBAR_SUPPORT = False
     from readtoolbar import ReadToolbar, ViewToolbar
 
 from gettext import gettext as _
-import gobject
+from gi.repository import GObject
 from decimal import *
 
 _TOOLBAR_READ = 1
@@ -52,8 +55,8 @@ _logger = logging.getLogger('read-sd-comics')
 
 class ReadSDComics(activity.Activity):
     __gsignals__ = {
-        'go-fullscreen': (gobject.SIGNAL_RUN_FIRST,
-                          gobject.TYPE_NONE,
+        'go-fullscreen': (GObject.SignalFlags.RUN_FIRST,
+                          None,
                           ([]))
     }
 
@@ -65,7 +68,7 @@ class ReadSDComics(activity.Activity):
         self.zoom_image_to_fit = True
         self.total_pages = 0
 
-        self.connect("expose_event", self.area_expose_cb)
+        self.connect("draw", self.__draw_cb)
         self.connect("delete_event", self.delete_cb)
        
         if _NEW_TOOLBAR_SUPPORT:
@@ -73,39 +76,39 @@ class ReadSDComics(activity.Activity):
         else:
             self.create_old_toolbar()
 
-        self.scrolled = gtk.ScrolledWindow()
-        self.scrolled.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
-        self.scrolled.props.shadow_type = gtk.SHADOW_NONE
-        self.image = gtk.Image()
-        self.eventbox = gtk.EventBox()
+        self.scrolled = Gtk.ScrolledWindow()
+        self.scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+        self.scrolled.props.shadow_type = Gtk.ShadowType.NONE
+        self.image = Gtk.Image()
+        self.eventbox = Gtk.EventBox()
         self.eventbox.add(self.image)
         self.image.show()
         self.eventbox.show()
         self.scrolled.add_with_viewport(self.eventbox)
-        self.eventbox.set_events(gtk.gdk.KEY_PRESS_MASK | gtk.gdk.BUTTON_PRESS_MASK)
-        self.eventbox.set_flags(gtk.CAN_FOCUS)
+        self.eventbox.set_events(Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.BUTTON_PRESS_MASK)
+        self.eventbox.set_can_focus(True)
         self.eventbox.connect("key_press_event", self.keypress_cb)
         self.eventbox.connect("button_press_event", self.buttonpress_cb)
         
-        self._filechooser = gtk.FileChooserWidget(
-            action=gtk.FILE_CHOOSER_ACTION_OPEN, backend=None)
-        filter = gtk.FileFilter()
+        self._filechooser = Gtk.FileChooserWidget(
+            action=Gtk.FileChooserAction.OPEN)
+        filter = Gtk.FileFilter()
         filter.add_mime_type('application/zip')
         filter.add_mime_type('application/x-cbz')
         self._filechooser.set_filter(filter)
         self._filechooser.set_current_folder("/media")
-        self.copy_button = gtk.Button(_("Read Comic"))
+        self.copy_button = Gtk.Button(_("Read Comic"))
         self.copy_button.connect('clicked',  self.select_comic_path)
         self.copy_button.show()
         self._filechooser.set_extra_widget(self.copy_button)
-        preview = gtk.Image()
+        preview = Gtk.Image()
         self._filechooser.set_preview_widget(preview)
         self._filechooser.connect("update-preview", 
                                   self.update_preview_cb, preview)
 
-        vbox = gtk.VBox()
-        vbox.pack_start(self.scrolled)
-        vbox.pack_end(self._filechooser)
+        vbox = Gtk.VBox()
+        vbox.pack_start(self.scrolled, True, True, 0)
+        vbox.pack_end(self._filechooser, True, True, 0)
         self.set_canvas(vbox)
         if self._object_id is None:
             self.scrolled.hide()
@@ -120,9 +123,7 @@ class ReadSDComics(activity.Activity):
         self.saved_screen_width = 0
         self.eventbox.grab_focus()
         
-        pixmap = gtk.gdk.Pixmap(None, 1, 1, 1)
-        color = gtk.gdk.Color()
-        self.hidden_cursor = gtk.gdk.Cursor(pixmap, pixmap, color, color, 0, 0)
+        self.hidden_cursor = Gdk.Cursor.new(Gdk.CursorType.BLANK_CURSOR)
         self.cursor_visible = True
 
         self.link = None
@@ -166,7 +167,7 @@ class ReadSDComics(activity.Activity):
             file_mimetype = mime.get_for_file(filename)
             if file_mimetype  == 'application/x-cbz' or file_mimetype == 'application/zip':
                 fname = self.extract_image(filename)
-                pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(fname, 
+                pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(fname, 
                     style.zoom(320), style.zoom(240))
                 preview.set_from_pixbuf(pixbuf)
                 have_preview = True
@@ -229,8 +230,8 @@ class ReadSDComics(activity.Activity):
         toolbar_box.toolbar.insert(self.forward, -1)
         self.forward.show()
 
-        num_page_item = gtk.ToolItem()
-        self.num_page_entry = gtk.Entry()
+        num_page_item = Gtk.ToolItem()
+        self.num_page_entry = Gtk.Entry()
         self.num_page_entry.set_text('0')
         self.num_page_entry.set_alignment(1)
         self.num_page_entry.connect('insert-text',
@@ -243,14 +244,8 @@ class ReadSDComics(activity.Activity):
         toolbar_box.toolbar.insert(num_page_item, -1)
         num_page_item.show()
 
-        total_page_item = gtk.ToolItem()
-        self.total_page_label = gtk.Label()
-
-        label_attributes = pango.AttrList()
-        label_attributes.insert(pango.AttrSize(14000, 0, -1))
-        label_attributes.insert(pango.AttrForeground(65535, 65535, 
-                                                     65535, 0, -1))
-        self.total_page_label.set_attributes(label_attributes)
+        total_page_item = Gtk.ToolItem()
+        self.total_page_label = Gtk.Label()
 
         self.total_page_label.set_text(' / 0')
         total_page_item.add(self.total_page_label)
@@ -258,7 +253,7 @@ class ReadSDComics(activity.Activity):
         toolbar_box.toolbar.insert(total_page_item, -1)
         total_page_item.show()
 
-        spacer = gtk.SeparatorToolItem()
+        spacer = Gtk.SeparatorToolItem()
         toolbar_box.toolbar.insert(spacer, -1)
         spacer.show()
   
@@ -282,7 +277,7 @@ class ReadSDComics(activity.Activity):
         toolbar_box.toolbar.insert(self._fullscreen, -1)
         self._fullscreen.show()
         
-        separator = gtk.SeparatorToolItem()
+        separator = Gtk.SeparatorToolItem()
         separator.props.draw = False
         separator.set_expand(True)
         toolbar_box.toolbar.insert(separator, -1)
@@ -379,7 +374,7 @@ class ReadSDComics(activity.Activity):
 
     def keypress_cb(self, widget, event):
         "Respond when the user presses Escape or one of the arrow keys"
-        keyname = gtk.gdk.keyval_name(event.keyval)
+        keyname = Gdk.keyval_name(event.keyval)
         if keyname == 'Page_Up':
             self.previous_page()
             return True
@@ -475,9 +470,9 @@ class ReadSDComics(activity.Activity):
             self.read_toolbar.set_current_page(page)
         self.page = page
 
-    def area_expose_cb(self, area, event):
-        screen_width = gtk.gdk.screen_width()
-        screen_height = gtk.gdk.screen_height()
+    def __draw_cb(self, widget, cr):
+        screen_width = Gdk.Screen.width()
+        screen_height = Gdk.Screen.height()
         if self.saved_screen_width != screen_width and self.saved_screen_width != 0:
             self.show_page(self.page)
         self.saved_screen_width = screen_width
@@ -494,9 +489,9 @@ class ReadSDComics(activity.Activity):
         TOOLBOX_HEIGHT = 60
         BORDER_WIDTH =  30
         # get the size of the fullscreen display
-        screen_width = gtk.gdk.screen_width()
+        screen_width = Gdk.Screen.width()
         screen_width = screen_width - BORDER_WIDTH
-        screen_height = gtk.gdk.screen_height()
+        screen_height = Gdk.Screen.height()
         screen_height = screen_height - TOOLBOX_HEIGHT
         # get the size of the image.
         im = pygame.image.load(filename)
@@ -540,8 +535,8 @@ class ReadSDComics(activity.Activity):
                     new_height /= new_width
                 new_width = screen_width
         
-        pixbuf = gtk.gdk.pixbuf_new_from_file(filename)
-        scaled_buf = pixbuf.scale_simple(new_width, new_height, gtk.gdk.INTERP_BILINEAR)
+        pixbuf = GdkPixbuf.Pixbuf.new_from_file(filename)
+        scaled_buf = pixbuf.scale_simple(new_width, new_height, GdkPixbuf.InterpType.BILINEAR)
         self.image.set_from_pixbuf(scaled_buf)
         self.image.show()
  
