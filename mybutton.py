@@ -17,9 +17,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  US
 import gi
-gi.require_version('GConf', '2.0')
 from gi.repository import Gtk
-from gi.repository import GConf
 
 from sugar3.activity.widgets import StopButton
 from sugar3.graphics.toolbarbox import ToolbarButton
@@ -32,8 +30,7 @@ def _create_activity_icon(metadata):
     if metadata.get('icon-color', ''):
         color = XoColor(metadata['icon-color'])
     else:
-        client = GConf.Client.get_default()
-        color = XoColor(client.get_string('/desktop/sugar/user/color'))
+        color = XoColor()
 
     from sugar3.activity.activity import get_bundle_path
     bundle = ActivityBundle(get_bundle_path())
