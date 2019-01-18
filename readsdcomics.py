@@ -313,9 +313,10 @@ class ReadSDComics(activity.Activity):
         self.emit('go-fullscreen')
 
     def __new_num_page_entry_insert_text_cb(self, entry, text, length, position):
-        if not re.match('[0-9]', text):
-            entry.emit_stop_by_name('insert-text')
-            return True
+        for char in text:
+            if not re.match('[0-9,-.]', char):
+                entry.emit_stop_by_name('insert-text')
+                return True
         return False
 
     def __new_num_page_entry_activate_cb(self, entry):
