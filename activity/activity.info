@@ -1,7 +1,7 @@
 [Activity]
 name = Read SD Comics
 bundle_id = org.laptop.ReadSDComics
-exec = sugar-activity readsdcomics.ReadSDComics
+exec = sugar-activity3 readsdcomics.ReadSDComics
 activity_version = 3
 icon = ReadSDComics
 show_launcher = yes
