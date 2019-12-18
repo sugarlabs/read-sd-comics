@@ -544,10 +544,10 @@ class ReadSDComics(activity.Activity):
         "Extract the file to a temp directory for viewing"
         try:
             filebytes = zipfile.read(filename)
-        except BadZipfile, err:
-            print 'Error opening the zip file: %s' % (err)
+        except BadZipfile as err:
+            print('Error opening the zip file: %s' % (err))
             return False
-        except KeyError,  err:
+        except KeyError as  err:
             self._alert('Key Error', 'Zipfile key not found: '  + str(filename))
             return
         outfn = self.make_new_filename(filename)
