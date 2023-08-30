@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-04 00:31-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: gug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. TRANS: "name" option from activity.info file
+msgid "Read SD Comics"
+msgstr ""
+
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid ""
+"Read comic book CBZ files from your SD or thumb drive, and avoid filling up "
+"your Journal."
+msgstr ""
+
+#: readsdcomics.py:97
+msgid "Read Comic"
+msgstr ""
+
+#: readsdcomics.py:146
+msgid "Read"
+msgstr ""
+
+#: readsdcomics.py:151
+msgid "View"
+msgstr ""
+
+#: readsdcomics.py:209 readtoolbar.py:37
+msgid "Back"
+msgstr ""
+
+#: readsdcomics.py:212 readtoolbar.py:40
+msgid "Previous page"
+msgstr ""
+
+#: readsdcomics.py:221 readtoolbar.py:49
+msgid "Forward"
+msgstr ""
+
+#: readsdcomics.py:224 readtoolbar.py:52
+msgid "Next page"
+msgstr ""
+
+#: readsdcomics.py:266 readtoolbar.py:158
+msgid "Zoom out"
+msgstr ""
+
+#: readsdcomics.py:273 readtoolbar.py:165
+msgid "Zoom in"
+msgstr ""
+
+#: readsdcomics.py:280 readtoolbar.py:177
+msgid "Fullscreen"
+msgstr ""
