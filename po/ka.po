@@ -8,17 +8,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-04 00:31-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-11-01 06:26+0000\n"
+"Last-Translator: NF <rkavt@smartprojects.ge>\n"
+"Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
+"sugar-activities/read-sd-comics/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Read SD Comics"
-msgstr ""
+msgstr "წაიკითხეთ SD კომიქსები"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
@@ -26,43 +29,45 @@ msgid ""
 "Read comic book CBZ files from your SD or thumb drive, and avoid filling up "
 "your Journal."
 msgstr ""
+"წაიკითხეთ კომიქსების CBZ ფაილები SD ან USB დისკიდან და აიცილეთ თავიდან "
+"ჟურნალის გადავსება."
 
 #: readsdcomics.py:97
 msgid "Read Comic"
-msgstr ""
+msgstr "კომიქსის წაკითხვა"
 
 #: readsdcomics.py:146
 msgid "Read"
-msgstr ""
+msgstr "წაკითხვა"
 
 #: readsdcomics.py:151
 msgid "View"
-msgstr ""
+msgstr "ნახვა"
 
 #: readsdcomics.py:209 readtoolbar.py:37
 msgid "Back"
-msgstr ""
+msgstr "უკან"
 
 #: readsdcomics.py:212 readtoolbar.py:40
 msgid "Previous page"
-msgstr ""
+msgstr "წინა გვერდი"
 
 #: readsdcomics.py:221 readtoolbar.py:49
 msgid "Forward"
-msgstr ""
+msgstr "წინ"
 
 #: readsdcomics.py:224 readtoolbar.py:52
 msgid "Next page"
-msgstr ""
+msgstr "შემდეგი გვერდი"
 
 #: readsdcomics.py:266 readtoolbar.py:158
 msgid "Zoom out"
-msgstr ""
+msgstr "დაპატარავება"
 
 #: readsdcomics.py:273 readtoolbar.py:165
 msgid "Zoom in"
-msgstr ""
+msgstr "გადიდება"
 
 #: readsdcomics.py:280 readtoolbar.py:177
 msgid "Fullscreen"
-msgstr ""
+msgstr "სრულ ეკრანზე"
