@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-04 00:31-0500\n"
-"PO-Revision-Date: 2024-11-01 06:26+0000\n"
+"PO-Revision-Date: 2026-03-18 06:28+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/read-sd-comics/ka/>\n"
@@ -42,7 +42,7 @@ msgstr "წაკითხვა"
 
 #: readsdcomics.py:151
 msgid "View"
-msgstr "ნახვა"
+msgstr "ხედი"
 
 #: readsdcomics.py:209 readtoolbar.py:37
 msgid "Back"
